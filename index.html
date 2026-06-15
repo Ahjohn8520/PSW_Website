@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <title>HOME | PSW</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class'}</script>
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/95 backdrop-blur-sm border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">
+      <a href="index.html" class="text-sm tracking-[3px] uppercase font-bold text-white">PSW</a>
+      <div class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-sm tracking-[2px] uppercase text-white">Menu</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-zinc-950">
+      <div class="flex flex-col items-center gap-4 py-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section dark-hero">
+    <div class="max-w-[90rem] w-full pl-[60px]">
+      <h1 class="text-[63px] font-['Playfair_Display'] font-light tracking-tight leading-tight mb-8 text-black">
+        PRODUCTION STUDIO<br />WORKSHOP LIMITED
+      </h1>
+      <p class="text-[18px] font-['Instrument_Sans'] text-zinc-700 max-w-4xl leading-relaxed mb-10">
+        We are a Hong Kong-based photography company specializing in commercial, food, and visual effects photography, enhancing restaurant brand image through high-contrast visual storytelling and editorial-grade close-up food photography.
+      </p>
+      <a href="contact.html" class="inline-block border-2 border-black px-8 py-3 text-sm tracking-[3px] uppercase text-black hover:bg-black hover:text-white transition duration-300">
+        Start a Collaboration
+      </a>
+    </div>
+  </section>
+
+  <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-12 text-center">
+        <h2 class="font-light tracking-tight mb-3 text-white" style="font-size: 64px; font-family: 'Playfair Display', serif;">Selected Works</h2>
+        <p class="text-zinc-400 tracking-wide" style="font-size: 18px; font-family: 'Instrument Sans', sans-serif;">A showcase of our cinematic close-up food photography, capturing the essence of premium dining in Hong Kong.</p>
+      </div>
+      <div id="gallery-home" class="gallery-grid-home"></div>
+      <div class="mt-12 text-center">
+        <a href="work.html" class="inline-block border-2 border-white px-8 py-3 text-sm tracking-[3px] uppercase text-white hover:bg-white hover:text-black transition duration-300">
+          See More &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6 bg-zinc-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-light tracking-tight mb-3 text-white">OUR CLIENTS</h2>
+      <div class="flex flex-wrap justify-center items-center gap-12 mt-10">
+        <img src="https://static.wixstatic.com/media/e20ee8_1dd15c89c73145b6a0701344f2603811~mv2.jpg/v1/fill/w_1200,h_700,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo.jpg" alt="Client logo" class="w-full max-w-4xl h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 px-6 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+      <span class="tracking-[2px] uppercase font-light">&copy; PSW</span>
+      <span>Tel: +852 9883 9088 &nbsp;|&nbsp; Hours: 10:00 - 18:30</span>
+    </div>
+  </footer>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="images/gallery-local.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

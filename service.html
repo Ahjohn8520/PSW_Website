@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+  <title>SERVICE | PSW</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class'}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2" />
+</head>
+<body class="bg-black text-white">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/95 backdrop-blur-sm border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between">
+      <a href="index.html" class="text-sm tracking-[3px] uppercase font-bold text-white">PSW</a>
+      <div class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-sm tracking-[2px] uppercase text-white">Menu</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-zinc-950">
+      <div class="flex flex-col items-center gap-4 py-6">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 style="font-size: 64px; font-family: 'Playfair Display', serif;" class="font-light tracking-tight mb-6 text-white">How We Help You</h1>
+      <p class="text-zinc-400 max-w-2xl mx-auto leading-relaxed" style="font-size: 18px; font-family: 'Instrument Sans', sans-serif;">
+        Every project is customised to your needs. Most clients choose our photography Services + Food Styling Services combined package for the strongest results.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-32 px-6">
+    <div class="max-w-6xl mx-auto space-y-2">
+      <div class="service-card-alt flex flex-col md:flex-row rounded-xl overflow-hidden">
+        <div class="service-image md:w-1/2 h-64 md:h-auto bg-zinc-800">
+          <img src="images/service/01.jpg" alt="Photography Services" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="service-content md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+          <h3 class="font-light tracking-wide text-white leading-tight" style="font-size: 60px; font-family: 'Playfair Display', serif; margin-bottom: 50px;">Photography Services</h3>
+          <p class="leading-relaxed text-zinc-400" style="font-size: 18px; font-family: 'Instrument Sans', sans-serif;">
+            We offer top-tier Hong Kong food photography, capturing everything from menus and products to interiors and lifestyle scenes. Beyond the lens, we will adjust the photography style to align with the design, ensuring your brand visuals remain highly consistent across all marketing channels, including social media images, posters, and menus.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card-alt flex flex-col md:flex-row-reverse rounded-xl overflow-hidden">
+        <div class="service-image md:w-1/2 h-64 md:h-auto bg-zinc-800">
+          <img src="images/service/02.jpg" alt="Food Styling Services" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="service-content md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+          <h3 class="font-light tracking-wide text-white leading-tight" style="font-size: 60px; font-family: 'Playfair Display', serif; margin-bottom: 50px;">Food Styling Services</h3>
+          <p class="leading-relaxed text-zinc-400" style="font-size: 18px; font-family: 'Instrument Sans', sans-serif;">
+            We collaborate with chefs to style and plate dishes that look truly irresistible. From preparation to final presentation, we perfect every detail to capture your food's most delicious form.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-card-alt flex flex-col md:flex-row rounded-xl overflow-hidden">
+        <div class="service-image md:w-1/2 h-64 md:h-auto bg-zinc-800">
+          <img src="images/service/03.jpg" alt="Retouch Services" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="service-content md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+          <h3 class="font-light tracking-wide text-white leading-tight" style="font-size: 60px; font-family: 'Playfair Display', serif; margin-bottom: 50px;">Retouch Services</h3>
+          <p class="leading-relaxed text-zinc-400" style="font-size: 18px; font-family: 'Instrument Sans', sans-serif;">
+            Each project is tailored to the client's needs, with post-production work including fine-tuning colors, contrasts, and details to ensure that each dish is presented in perfect condition while creating the visual aesthetics the client envisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 px-6 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+      <span class="tracking-[2px] uppercase font-light">&copy; PSW</span>
+      <span>Tel: +852 9883 9088 &nbsp;|&nbsp; Hours: 10:00 - 18:30</span>
+    </div>
+  </footer>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="images/gallery-local.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
